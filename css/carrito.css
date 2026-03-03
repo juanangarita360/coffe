@@ -1,0 +1,278 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff; 
+    color: #333;
+}
+
+
+header {
+    background-color: #3b1414;
+    padding: 15px 50px;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.8rem;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+    align-items: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 0.95rem;
+}
+
+
+.cart-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 40px;
+    padding: 40px 8%;
+    align-items: start;
+}
+
+
+.cart-left {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+
+.cart-title {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.large-cart-icon {
+    font-size: 3rem;
+    color: #3b1414;
+}
+
+.cart-title h1 {
+    font-size: 1.8rem;
+    font-weight: 800;
+}
+
+.cart-title p {
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
+
+.empty-cart-box {
+    background-color: white;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.1); 
+    text-align: center;
+    border: 1px solid #eee;
+}
+
+.empty-cart-icon {
+    font-size: 6rem;
+    color: #ccc; 
+    margin-bottom: 20px;
+}
+
+.empty-cart-box h2 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.empty-cart-box p {
+    font-size: 0.85rem;
+    color: #777;
+    margin-bottom: 30px;
+}
+
+
+.btn-explore {
+    background-color: #3b1414;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 12px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-explore:hover {
+    background-color: #5d2020;
+}
+
+
+.cart-right {
+    display: flex;
+    justify-content: flex-end; 
+}
+
+
+.summary-box {
+    background-color: white;
+    width: 90%;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.1); 
+    border: 1px solid #eee;
+}
+
+
+.summary-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+.summary-header i {
+    color: #3b1414;
+    font-size: 1.2rem;
+}
+
+.summary-header h2 {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+
+.price-line, .total-line {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    font-size: 0.9rem;
+}
+
+.total-line {
+    font-weight: 800;
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 2px solid #ddd; 
+}
+
+.price.green {
+    color: #27ae60;
+    font-weight: 600;
+}
+
+
+.order-info {
+    margin-top: 30px;
+}
+
+.info-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+}
+
+.info-header i {
+    color: #e67e22; 
+}
+
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 0.7rem;
+    color: #999;
+    margin-bottom: 4px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.8rem;
+    background-color: #fafafa;
+}
+
+
+.row {
+    display: flex;
+    gap: 15px;
+}
+
+.row .input-group {
+    flex: 1;
+}
+
+
+.btn-finalize {
+    background-color: #3b1414;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 12px;
+    border-radius: 12px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.btn-finalize:hover {
+    background-color: #5d2020;
+}
+
+
+.trust-icons {
+    margin-top: 20px;
+    text-align: left;
+    font-size: 0.75rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+.trust-icons p i {
+    margin-right: 6px;
+    width: 18px; 
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .cart-container {
+        grid-template-columns: 1fr;
+    }
+    .cart-right {
+        justify-content: center;
+    }
+}

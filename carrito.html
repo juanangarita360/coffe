@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffe - Tu Carrito</title>
+    <link rel="stylesheet" href="/css/carrito.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">☕ Coffe</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="contacto.html">Contactenos</a></li>
+                <li><a href="carrito.html" class="active"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                <li><a href="login.html"><i class="fa-regular fa-circle-user"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="cart-container">
+        <div class="cart-left">
+            <div class="cart-title">
+                <i class="fa-solid fa-cart-shopping large-cart-icon"></i> <div>
+                    <h1>Tu carrito</h1>
+                    <p>Reuisa tus productos antes de finalizar la compra</p>
+                </div>
+            </div>
+
+            <div class="empty-cart-box">
+                <i class="fa-solid fa-cart-arrow-down empty-cart-icon"></i> <h2>Tu carrito está vacío</h2>
+                <p>¡Descubre productos increíbles y comienza tu compra!</p>
+                <button class="btn-explore">
+                    <i class="fa-solid fa-magnifying-glass"></i> Explorar Productos
+                </button>
+            </div>
+        </div>
+
+        <aside class="cart-right">
+            <div class="summary-box">
+                <div class="summary-header">
+                    <i class="fa-solid fa-box-open"></i>
+                    <h2>Resumen del Pedido</h2>
+                </div>
+                
+                <div class="price-line">
+                    <span class="label">Subtotal</span>
+                    <span class="price">$ 0</span>
+                </div>
+                <div class="price-line">
+                    <span class="label">Envio</span>
+                    <span class="price green">Gratis</span>
+                </div>
+                <div class="total-line">
+                    <span class="label">Total</span>
+                    <span class="price">$ 0</span>
+                </div>
+
+                <div class="order-info">
+                    <div class="info-header">
+                        <i class="fa-solid fa-map-pin"></i>
+                        <h3>Información del Pedido</h3>
+                    </div>
+                    
+                    <div class="input-group full-width">
+                        <label>Dirección completa</label>
+                        <input type="text">
+                    </div>
+                    
+                    <div class="row">
+                        <div class="input-group">
+                            <label>Ciudad</label>
+                            <input type="text">
+                        </div>
+                        <div class="input-group">
+                            <label>Código Postal</label>
+                            <input type="text">
+                        </div>
+                    </div>
+                    
+                    <div class="input-group full-width">
+                        <label>Método de pago</label>
+                        <input type="text">
+                    </div>
+                    
+                    <button class="btn-finalize">
+                        <i class="fa-solid fa-check"></i> Finalizar compra
+                    </button>
+                    
+                    <div class="trust-icons">
+                        <p><i class="fa-solid fa-shield-halved"></i> Compra segura y protegida</p>
+                        <p><i class="fa-solid fa-truck"></i> Envío gratis en compras > $100.000</p>
+                        <p><i class="fa-solid fa-headset"></i> Atención al cliente 24/7</p>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,215 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #3b1414; 
+    color: white;
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+header {
+    padding: 20px 50px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.8rem;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f39c12;
+}
+
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 100px;
+    height: calc(100vh - 80px);
+}
+
+.content {
+    max-width: 50%;
+}
+
+.cursive-title {
+    font-family: 'Dancing Script', cursive;
+    font-size: 5rem;
+    color: #e67e22;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+.description {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    opacity: 0.9;
+}
+
+/* Botones */
+.buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.btn {
+    padding: 12px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: transform 0.2s;
+}
+
+.btn-primary {
+    background-color: #e67e22;
+    color: white;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    border: 2px solid #e67e22;
+    color: white;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+/* Contenrdor Imagen */
+.image-container {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.image-container img {
+    max-width: 120%; 
+    filter: drop-shadow(0 20px 30px rgba(0,0,0,0.5));
+}
+
+/* --- RESPONSIVE --- */
+
+
+@media (max-width: 1024px) {
+    header {
+        padding: 20px 30px;
+    }
+
+    .hero {
+        padding: 40px 50px;
+    }
+
+    .cursive-title {
+        font-size: 3.5rem;
+    }
+}
+
+
+@media (max-width: 768px) {
+    body {
+        overflow-y: auto; 
+        height: auto;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+        height: auto;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .content {
+        max-width: 100%;
+        margin-top: 20px;
+    }
+
+    .cursive-title {
+        font-size: 2.8rem;
+    }
+
+    .subtitle {
+        font-size: 1.2rem;
+    }
+
+    .description {
+        font-size: 0.9rem;
+        margin-bottom: 30px;
+    }
+
+    .buttons {
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .btn {
+        width: 100%; 
+        text-align: center;
+    }
+
+    .image-container {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .image-container img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .cursive-title {
+        font-size: 2.2rem;
+    }
+    
+    header {
+        padding: 15px;
+    }
+}

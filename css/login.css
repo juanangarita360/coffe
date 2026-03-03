@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+
+header {
+    background-color: #3b1414; 
+    padding: 15px 50px;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.8rem;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+    align-items: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 0.95rem;
+}
+
+
+.auth-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 8%;
+    flex-grow: 1;
+}
+
+
+.form-box {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.1);
+    width: 450px;
+    text-align: center;
+}
+
+.form-box h1 {
+    font-size: 1.8rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.user-icon {
+    font-size: 3rem;
+    color: #3b1414;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 0.75rem;
+    color: #999;
+    margin-bottom: 4px;
+    font-weight: 600;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.85rem;
+    background-color: #fafafa;
+}
+
+
+.form-extras {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    font-size: 0.8rem;
+    color: #777;
+}
+
+.form-extras label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.form-extras a {
+    text-decoration: none;
+    color: #007bff; 
+    font-weight: 600;
+}
+
+
+.btn-submit {
+    background-color: #3b1414;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 12px;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: block;
+}
+
+.btn-submit:hover {
+    background-color: #5d2020;
+}
+
+
+.separator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0;
+    position: relative;
+    font-size: 0.8rem;
+    color: #aaa;
+    font-weight: 600;
+}
+
+.separator::before, .separator::after {
+    content: '';
+    position: absolute;
+    width: 40%;
+    height: 1px;
+    background-color: #ddd;
+    top: 50%;
+}
+
+.separator::before { left: 0; }
+.separator::after { right: 0; }
+
+
+.social-buttons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.social-btn {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    background-color: white;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #333;
+    transition: background-color 0.3s;
+}
+
+.social-btn:hover {
+    background-color: #fafafa;
+}
+
+.social-btn.google i { color: #db4437; } 
+.social-btn.facebook i { color: #4267B2; } 
+
+
+.form-box p {
+    font-size: 0.8rem;
+    color: #777;
+}
+
+.form-box p a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: 600;
+}
+
+
+.form-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 0.7rem;
+    color: #aaa;
+    margin-top: 15px;
+}
+
+
+.splash-box {
+    text-align: right;
+    width: 50%;
+}
+
+.cursive-text {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3rem;
+    color: #e67e22; 
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.splash-box img {
+    max-width: 100%;
+}
+
+/* Responsivo */
+@media (max-width: 900px) {
+    .auth-container {
+        flex-direction: column-reverse;
+        padding: 30px;
+    }
+    .splash-box {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .form-box {
+        width: 100%;
+    }
+}
