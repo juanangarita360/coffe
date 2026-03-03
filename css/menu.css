@@ -129,10 +129,42 @@ nav ul li a {
 }
 
 
+/* --- RESPONSIVE ADJUSTMENTS --- */
+
 @media (max-width: 992px) {
-    .menu-grid { grid-template-columns: repeat(2, 1fr); }
+    .menu-grid { 
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 15px 20px; /* Reducimos padding lateral para ganar espacio */
+    }
+
+    nav {
+        flex-direction: column; /* Alinea logo y menú verticalmente si no caben */
+        gap: 15px;
+    }
+
+    nav ul {
+        gap: 15px; /* Estrecha el espacio entre botones del menú */
+        flex-wrap: wrap; /* Permite que los botones bajen si el móvil es muy pequeño */
+        justify-content: center;
+    }
+
+    .logo {
+        font-size: 1.5rem; /* Logo un poco más pequeño para móviles */
+    }
 }
 
 @media (max-width: 600px) {
-    .menu-grid { grid-template-columns: 1fr; }
+    .menu-grid { 
+        grid-template-columns: 1fr; 
+    }
+    
+    /* Aseguramos que el contenedor del menú no pierda aire lateral */
+    .menu-container {
+        padding: 40px 5%;
+    }
 }

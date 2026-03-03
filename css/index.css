@@ -124,6 +124,8 @@ nav ul li a:hover {
 /* --- RESPONSIVE --- */
 
 
+/* --- RESPONSIVE ADJUSTMENTS --- */
+
 @media (max-width: 1024px) {
     header {
         padding: 20px 30px;
@@ -138,8 +140,12 @@ nav ul li a:hover {
     }
 }
 
-
 @media (max-width: 768px) {
+    /* Mantenemos la consistencia global del Header */
+    header {
+        padding: 15px 20px; 
+    }
+
     body {
         overflow-y: auto; 
         height: auto;
@@ -156,6 +162,11 @@ nav ul li a:hover {
         justify-content: center;
     }
 
+    .logo {
+        font-size: 1.5rem;
+    }
+
+    /* Ajustes específicos del Hero */
     .hero {
         flex-direction: column-reverse;
         height: auto;
@@ -202,7 +213,6 @@ nav ul li a:hover {
         height: auto;
     }
 }
-
 
 @media (max-width: 480px) {
     .cursive-title {

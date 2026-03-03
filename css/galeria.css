@@ -94,9 +94,33 @@ nav ul li a {
 }
 
 /* Responsive */
+
+
 @media (max-width: 992px) {
     .gallery-grid {
         grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+
+    header {
+        padding: 15px 20px; 
+    }
+
+    nav {
+        flex-direction: column; 
+        gap: 15px;
+    }
+
+    nav ul {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .logo {
+        font-size: 1.5rem;
     }
 }
 
@@ -104,7 +128,13 @@ nav ul li a {
     .gallery-grid {
         grid-template-columns: 1fr;
     }
+    
     .gallery-container {
         padding: 20px 5%;
+    }
+
+   
+    .gallery-item {
+        height: 200px;
     }
 }

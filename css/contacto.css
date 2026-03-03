@@ -157,13 +157,55 @@ nav ul li a {
     font-size: 2.5rem;
     color: #e67e22;
 }
+/* --- RESPONSIVE ADJUSTMENTS --- */
 
-/* Responsive */
 @media (max-width: 900px) {
     .contact-content {
         grid-template-columns: 1fr;
     }
     .btn-submit {
         align-self: center;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Ajustes de Navegación consistentes con el Index */
+    header {
+        padding: 15px 20px; 
+    }
+
+    nav {
+        flex-direction: column; 
+        gap: 15px;
+    }
+
+    nav ul {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .logo {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .contact-container {
+        padding: 40px 5%;
+    }
+    
+    .info-box {
+        padding: 25px; 
+        min-height: auto;
+    }
+
+    .cursive-text {
+        font-size: 2rem;
+        text-align: center;
+    }
+    
+    .contact-footer {
+        text-align: center;
     }
 }
