@@ -281,14 +281,35 @@ nav ul li a {
     }
 }
 
+/* --- RESPONSIVE ADJUSTMENTS --- */
+
+@media (max-width: 1024px) {
+    header {
+        padding: 20px 30px;
+    }
+
+    .hero {
+        padding: 40px 50px;
+    }
+
+    .cursive-title {
+        font-size: 3.5rem;
+    }
+}
+
 @media (max-width: 768px) {
-   
+    /* Mantenemos la consistencia global del Header */
     header {
         padding: 15px 20px; 
     }
 
+    body {
+        overflow-y: auto; 
+        height: auto;
+    }
+
     nav {
-        flex-direction: column; 
+        flex-direction: column;
         gap: 15px;
     }
 
@@ -301,30 +322,61 @@ nav ul li a {
     .logo {
         font-size: 1.5rem;
     }
-}
 
-@media (max-width: 600px) {
-    .cart-container {
-        padding: 20px 5%;
-        gap: 20px;
+    /* Ajustes específicos del Hero */
+    .hero {
+        flex-direction: column-reverse;
+        height: auto;
+        padding: 20px;
+        text-align: center;
     }
 
-    .cart-title {
+    .content {
+        max-width: 100%;
+        margin-top: 20px;
+    }
+
+    .cursive-title {
+        font-size: 2.8rem;
+    }
+
+    .subtitle {
+        font-size: 1.2rem;
+    }
+
+    .description {
+        font-size: 0.9rem;
+        margin-bottom: 30px;
+    }
+
+    .buttons {
+        justify-content: center;
         flex-direction: column;
-        text-align: center;
         gap: 10px;
     }
 
-    .empty-cart-box {
-        padding: 30px 20px;
+    .btn {
+        width: 100%; 
+        text-align: center;
     }
 
-    .row {
-        flex-direction: column;
-        gap: 0;
+    .image-container {
+        width: 100%;
+        margin-top: 20px;
     }
 
-    .large-cart-icon {
-        font-size: 2.5rem;
+    .image-container img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .cursive-title {
+        font-size: 2.2rem;
+    }
+    
+    header {
+        padding: 15px;
     }
 }
